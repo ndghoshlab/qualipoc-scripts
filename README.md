@@ -16,6 +16,7 @@ Scripts and documentation for QualiPoc & SmartAnalytics.
 - `Transfer Blocks` in LTE is the #TBs. 
 - LTE/NR `PDSCH_Agg` doesn't have `Band Number`, instead it has `PCell`, `PSCell` band number.
     - Reason: if PCell is "LTE E-UTRA 66", NR `PDSCH_Agg` `Band Number` would show n77, which is incorrect as PSCell is n77, not PCell.
+- Added PCell and PSCell bands explicitly in `PUSCH` as there is no `PUSCH_Agg` table. In PDSCH, this was not needed in per-carrier.
 
 # Questions to ask R&S (not asked in emails):
 - What is `DL Layer Summary` if actual #layers are different (which is the case as `Max PDSCH Layers` and `Avg PDSCH Layers` are different).
